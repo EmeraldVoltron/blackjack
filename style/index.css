@@ -1,0 +1,22 @@
+#callToAction {
+    width: 40%;
+    padding: 20px;
+    background-color: #f4f4f4;
+    border-radius: 10px;
+}
+
+#whyUs {
+    width: 40%;
+    padding: 20px;
+    background-color: #f4f4f4;
+    border-radius: 10px;
+}
+
+@media (max-width: 800px) {
+    #callToAction {
+        width: 100%;
+    }
+    #whyUs {
+        width: 100%;
+    }
+}
