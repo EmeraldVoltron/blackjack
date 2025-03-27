@@ -1,11 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BlackJack Rules</title>
-    <link rel="stylesheet" href="./style/style.css">
+    <link rel="stylesheet" href="./style/common.css">
+    <link rel="stylesheet" href="./style/rules.css">
 </head>
+
 <body>
     <header>
         <h1>The Rules of BlackJack</h1>
@@ -19,71 +22,96 @@
     </header>
     <br>
     <main>
-        <h3>Objective:</h3>
-        <p>
-            The goal of Blackjack is to have a hand value closer to 21 than the dealer without exceeding 21.
-        </p>
-        <h3>Card Values:</h3>
-        <p>
-            <ul>
-                <li>Number cards (2-10) are worth their face value.</li>
-                <li>Face cards (King, Queen, Jack) are worth 10 points.</li>
-                <li>Aces can be worth 1 or 11 points, depending on which benefits the player most.</li>
-            </ul>
-        </p>
-        <h3>Game Setup:</h3>
-        <p>
-            <ol>
-                <li>The game is typically played with one or more standard 52-card decks.</li>
-                <li>Each player, including the dealer, is dealt two cards.</li>
-                <li>The players’ cards are usually face-up, while the dealer has one card face-up and one face-down (the "hole" card).</li>
-            </ol>
-        </p>
-        <h3>Gameplay:</h3>
-        <p>
-            <ol>
-                <li>
-                    Player's Turn:
+        <section id="objective">
+            <h3>Objective:</h3>
+            <p>
+                The goal of Blackjack is to have a hand value closer to 21 than the dealer without exceeding 21.
+            </p>
+        </section>
+        <section class="rules-grid">
+            <section id="card-values">
+                <div class="rules-item">
+
+                    <h3>Card Values:</h3>
+                    <p>
                     <ul>
-                        <li>
-                            Players can choose to:
-                            <ul>
-                                <li>Hit – Take another card.</li>
-                                <li>Stand – Keep their current hand.</li>
-                                <li>Double Down – Double their bet, take one more card, and then stand.</li>
-                                <li>Split – If they have two identical cards, they can split them into two separate hands (this requires an additional bet).</li>
-                            </ul>
-                        </li>
+                        <li>Number cards (2-10) are worth their face value.</li>
+                        <li>Face cards (King, Queen, Jack) are worth 10 points.</li>
+                        <li>Aces can be worth 1 or 11 points, depending on which benefits the player most.</li>
                     </ul>
-                </li>
-                <li>
-                    Dealer's Turn:
+                    </p>
+                </div>
+            </section>
+            <section id="game-setup">
+                <div class="rules-item">
+                    <h3>Game Setup:</h3>
+                    <p>
+                    <ol>
+                        <li>The game is typically played with one or more standard 52-card decks.</li>
+                        <li>Each player, including the dealer, is dealt two cards.</li>
+                        <li>The players’ cards are usually face-up, while the dealer has one card face-up and one
+                            face-down (the
+                            "hole" card).</li>
+                    </ol>
+                    </p>
+                </div>
+            </section>
+            <section id="winning-losing">
+                <div class="rules-item">
+                    <h3>Winning and Losing:</h3>
+                    <p>
                     <ul>
-                        <li>The dealer reveals their face-down card</li>
-                        <li>If the dealer’s hand is 16 or lower, they must hit.</li>
-                        <li>If the dealer’s hand is 17 or higher, they must stand (some casinos require the dealer to hit on a "soft 17" – a hand including an Ace valued as 11).</li>
+                        <li>If a player’s hand exceeds 21, they "bust" and automatically lose.</li>
+                        <li>If the dealer busts, all remaining players win.</li>
+                        <li>If the player's total is higher than the dealer’s without busting, they win.</li>
+                        <li>If the dealer's total is higher, the player loses.</li>
+                        <li>If both have the same total, it’s a push (tie), and the player's bet is returned.</li>
+                        <li>A Blackjack (Ace + 10-point card) wins automatically, unless the dealer also has one
+                            (resulting in a
+                            push).</li>
                     </ul>
-                </li>
-            </ol>
-        </p>
-        <h3>Winning and Losing:</h3>
-        <p>
-            <ul>
-                <li>If a player’s hand exceeds 21, they "bust" and automatically lose.</li>
-                <li>If the dealer busts, all remaining players win.</li>
-                <li>If the player's total is higher than the dealer’s without busting, they win.</li>
-                <li>If the dealer's total is higher, the player loses.</li>
-                <li>If both have the same total, it’s a push (tie), and the player's bet is returned.</li>
-                <li>A Blackjack (Ace + 10-point card) wins automatically, unless the dealer also has one (resulting in a push).</li>
-            </ul>
-        </p>
-        <h3>Busting</h3>
-        <p>
-            Busting in Blackjack occurs when a player's or dealer's hand exceeds 21 points, resulting in an automatic loss.
-        </p>
+                    </p>
+                </div>
+            </section>
+            <section id="gameplay">
+                <div class="rules-item">
+                    <h3>Gameplay:</h3>
+                <p>
+                <ol>
+                    <li>
+                        Player's Turn:
+                        <ul>
+                            <li>
+                                Players can choose to:
+                                <ul>
+                                    <li>Hit – Take another card.</li>
+                                    <li>Stand – Keep their current hand.</li>
+                                    <li>Double Down – Double their bet, take one more card, and then stand.</li>
+                                    <li>Split – If they have two identical cards, they can split them into two separate
+                                        hands (this requires an additional bet).</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        Dealer's Turn:
+                        <ul>
+                            <li>The dealer reveals their face-down card</li>
+                            <li>If the dealer’s hand is 16 or lower, they must hit.</li>
+                            <li>If the dealer’s hand is 17 or higher, they must stand (some casinos require the dealer
+                                to
+                                hit on a "soft 17" – a hand including an Ace valued as 11).</li>
+                        </ul>
+                    </li>
+                </ol>
+                </p>
+                </div>
+            </section>
+        </section>
     </main>
     <footer>
         <p>&copy; Copyright 2025 BlackJack</p>
     </footer>
 </body>
+
 </html>

@@ -1,11 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gaming Table</title>
-    <link rel="stylesheet" href="./style/style.css">
+    <link rel="stylesheet" href="./style/common.css">
+    <link rel="stylesheet" href="./style/table.css">
 </head>
+
 <body>
     <header>
         <h1>BlackJack - Game Table</h1>
@@ -21,63 +24,85 @@
     </header>
     <br>
     <main>
-        <section>
-            <h2>Player's Cards</h2>
-            <ul>
-                <li>
-                    Ten Of Clubs
-                </li>
-                <li>
-                    Eight of Hearts
-                </li>
-            </ul>
-        </section>
-        <section>
-            <h2>Dealer's Cards</h2>
-            <ul>
-                <li>
-                    Nine Of Clubs
-                </li>
-                <li>
-                    Queen of Spades
-                </li>
-            </ul>
-        </section>
-        <section>
-            <h3>Player's Actions</h3>
-            <button type="button" disabled>
-                Hit
-            </button>
-            <button type="button">
-                Stand
-            </button>
-            <button type="button">
-                Split
-            </button>
-        </section>
-        <section>
-            <h3>Player's Options</h3>
-            <ul>
-                <li>
-                    <p>
-                        <strong>Hit</strong> - request another card from the dealer in an attempt to improve your hand. You can continue hitting until you decide to stand or your hand exceeds 21, which results in a bust.
-                    </p>
-                </li>
-                <li>
-                    <p>
-                        <strong>Stand</strong> - you choose not to take any additional cards. When you stand, you are satisifed with the value of your hand and signal that you want to hold your current total, allowing the dealer to play their hand next.
-                    </p>
-                </li>
-                <li>
-                    <p>
-                        <strong>Split</strong> - seperate a pair of identical cards into two seperate hands, placing an additional bet equal to your original wager. Each new hand is then played individually, following the standard rules of the game. 
-                    </p>
-                </li>
-            </ul>
+        <section class="table-grid">
+            <section id="players-cards">
+                <div class="table-item">
+                    <h2>Player's Cards</h2>
+                    <ul>
+                        <li>
+                            Ten Of Clubs
+                        </li>
+                        <li>
+                            Eight of Hearts
+                        </li>
+                    </ul>
+                </div>
+            </section>
+            <section id="dealers-cards">
+                <div class="table-item">
+                    <h2>Dealer's Cards</h2>
+                    <ul>
+                        <li>
+                            Nine Of Clubs
+                        </li>
+                        <li>
+                            Queen of Spades
+                        </li>
+                    </ul>
+                </div>
+            </section>
+            <section id="player-actions">
+                <div class="table-item">
+                    <h3>Player's Actions</h3>
+                    <button type="button" disabled>
+                        Hit
+                    </button>
+                    <button type="button">
+                        Stand
+                    </button>
+                    <button type="button">
+                        Split
+                    </button>
+                </div>
+            </section>
+            <section id="player-options">
+                <div class="table-item">
+                    <h3>Player's Options</h3>
+                    <ul>
+                        <li>
+                            <p>
+                                <strong>Hit</strong> - request another card from the dealer in an attempt to improve
+                                your
+                                hand. You can continue hitting until you decide to stand or your hand exceeds 21, which
+                                results in a bust.
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                <strong>Stand</strong> - you choose not to take any additional cards. When you stand,
+                                you
+                                are satisifed with the value of your hand and signal that you want to hold your current
+                                total, allowing the dealer to play their hand next.
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                <strong>Split</strong> - seperate a pair of identical cards into two seperate hands,
+                                placing
+                                an additional bet equal to your original wager. Each new hand is then played
+                                individually,
+                                following the standard rules of the game.
+                            </p>
+                        </li>
+                    </ul>
+                </div>
+
+            </section>
         </section>
     </main>
     <footer>
         <p>&copy; Copyright 2025 BlackJack</p>
     </footer>
 </body>
+
 </html>

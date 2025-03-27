@@ -1,12 +1,17 @@
+.about-grid {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    /* grid-template-columns: 2fr 2fr; */
+    gap: 10px;
+}
+
 #callToAction {
-    width: 40%;
     padding: 20px;
     background-color: #f4f4f4;
     border-radius: 10px;
 }
 
 #whyUs {
-    width: 40%;
     padding: 20px;
     background-color: #f4f4f4;
     border-radius: 10px;

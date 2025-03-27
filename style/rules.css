@@ -1,0 +1,47 @@
+.rules-grid {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    /* grid-template-columns: 2fr 2fr; */
+    gap: 10px;
+}
+
+.rules-item {
+    background: #ddd;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+#card-values {
+    padding: 20px;
+    background-color: #f4f4f4;
+    border-radius: 10px;
+    margin: 10px;
+}
+
+#game-setup {
+    padding: 20px;
+    background-color: #f4f4f4;
+    border-radius: 10px;
+    margin: 10px;
+}
+
+#winning-losing{
+    padding: 20px;
+    background-color: #f4f4f4;
+    border-radius: 10px;
+    margin: 10px;
+}
+
+#gameplay{
+    padding: 20px;
+    background-color: #f4f4f4;
+    border-radius: 10px;
+    margin: 10px;
+}
+
+#objective {
+    padding: 20px;
+    background-color: #f4f4f4;
+    border-radius: 10px;
+    margin: 10px;
+}
