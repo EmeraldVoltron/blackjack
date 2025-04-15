@@ -12,103 +12,90 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
         rel="stylesheet">
+
+    <!-- JavaScript -->
+    <script src="./script/table.js"></script>
 </head>
 
 <body>
-    <header>
-        <h1>BlackJack - Game Table</h1>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="rules.html">Rules</a></li>
-                <li><a href="table.html" active>Table</a></li>
-                <li><a href="login.html">LogIn</a></li>
-            </ul>
-            <br>
-        </nav>
-        <br>
-    </header>
-    <br>
-    <main>
-        <section class="table-grid">
-            <section id="players-cards">
-                <div class="table-item">
-                    <h2>Player's Cards</h2>
-                    <ul>
-                        <li>
-                            Ten Of Clubs
-                        </li>
-                        <li>
-                            Eight of Hearts
-                        </li>
-                    </ul>
-                </div>
-            </section>
-            <section id="dealers-cards">
-                <div class="table-item">
-                    <h2>Dealer's Cards</h2>
-                    <ul>
-                        <li>
-                            Nine Of Clubs
-                        </li>
-                        <li>
-                            Queen of Spades
-                        </li>
-                    </ul>
-                </div>
-            </section>
-            <section id="player-actions">
-                <div class="table-item">
-                    <h3>Player's Actions</h3>
-                    <button type="button" disabled>
-                        Hit
-                    </button>
-                    <button type="button">
-                        Stand
-                    </button>
-                    <button type="button">
-                        Split
-                    </button>
-                </div>
-            </section>
-            <section id="player-options">
-                <div class="table-item">
-                    <h3>Player's Options</h3>
-                    <ul>
-                        <li>
-                            <p>
-                                <strong>Hit</strong> - request another card from the dealer in an attempt to improve
-                                your
-                                hand. You can continue hitting until you decide to stand or your hand exceeds 21, which
-                                results in a bust.
-                            </p>
-                        </li>
-                        <li>
-                            <p>
-                                <strong>Stand</strong> - you choose not to take any additional cards. When you stand,
-                                you
-                                are satisifed with the value of your hand and signal that you want to hold your current
-                                total, allowing the dealer to play their hand next.
-                            </p>
-                        </li>
-                        <li>
-                            <p>
-                                <strong>Split</strong> - seperate a pair of identical cards into two seperate hands,
-                                placing
-                                an additional bet equal to your original wager. Each new hand is then played
-                                individually,
-                                following the standard rules of the game.
-                            </p>
-                        </li>
-                    </ul>
-                </div>
 
+    <body>
+        <header>
+            <h1>BlackJack - Game Table</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="rules.html">Rules</a></li>
+                    <li><a href="table.html" active>Table</a></li>
+                    <li><a href="login.html">LogIn</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            <!-- Betting Section -->
+            <section id="betting" class="hidden table-item">
+                <h3>Place Your Bet</h3>
+                <p>Bankroll: <span id="bankroll-display">$2022</span></p>
+                <label for="users-wager">Your Wager:</label>
+                <input id="users-wager" type="number" min="1" step="1" />
+                <button onclick="makeWager()">Bet</button>
             </section>
-        </section>
-    </main>
-    <footer>
-        <p>&copy; Copyright 2025 BlackJack</p>
-    </footer>
-</body>
+
+            <section class="table-grid">
+                <section id="players-cards">
+                    <div class="table-item">
+                        <h2>Player's Cards</h2>
+                        <ul>
+                            <li>Ten Of Clubs</li>
+                            <li>Eight of Hearts</li>
+                        </ul>
+                    </div>
+                </section>
+
+                <section id="dealers-cards">
+                    <div class="table-item">
+                        <h2>Dealer's Cards</h2>
+                        <ul>
+                            <li>Nine Of Clubs</li>
+                            <li>Queen of Spades</li>
+                        </ul>
+                    </div>
+                </section>
+
+                <section id="playersActions">
+                    <div class="table-item">
+                        <h3>Player's Actions</h3>
+                        <button type="button" disabled>Hit</button>
+                        <button type="button">Stand</button>
+                        <button type="button">Split</button>
+                    </div>
+                </section>
+
+                <section id="player-options">
+                    <div class="table-item">
+                        <h3>Player's Options</h3>
+                        <ul>
+                            <li>
+                                <p><strong>Hit</strong> - request another card from the dealer.</p>
+                            </li>
+                            <li>
+                                <p><strong>Stand</strong> - you choose not to take any additional cards.</p>
+                            </li>
+                            <li>
+                                <p><strong>Split</strong> - separate a pair into two hands, with an additional bet.</p>
+                            </li>
+                        </ul>
+                    </div>
+                </section>
+            </section>
+        </main>
+
+        <footer>
+            <p>&copy; Copyright 2025 BlackJack</p>
+        </footer>
+
+
+    </body>
 
 </html>
